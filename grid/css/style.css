@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    grid-gap: 15px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.item:nth-child(1),
+.item:nth-child(2){
+    grid-column: span 3;
+    grid-row: span;
+}
+
+.item:nth-child(3){
+    grid-column: span 6;
+    grid-row: span 2;
+}
+
+.item:nth-child(4){
+    grid-column: 4 / 7;
+    grid-row: span;
+}
+
+.item:nth-child(5),
+.item:nth-child(6){
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.item:nth-child(7){
+    grid-column: span 5;
+    grid-row: span 2;
+}
+
+.item:nth-child(8){
+    grid-row: span 2;
+}
+
+.item:nth-child(even){
+    background-color: turquoise;
+}
+.item:nth-child(odd){
+    background-color: tomato;
+}
+
+/* .item:nth-child(even){
+    background-color: turquoise;
+}
+.item:nth-child(odd){
+    background-color: tomato;
+}
+
+body{
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr;
+    grid-template-rows: 3fr 1fr 4fr;
+    grid-gap: 15px;
+} */
+
+
+/* 
+.header{
+    background-color: black;
+    grid-area: header;
+}
+
+.menu{
+    background-color: red;
+    grid-area: menu;
+}
+
+.hero{
+    background-color: royalblue;
+    grid-area: hero;
+}
+
+.main{
+    background-color: purple;
+    grid-area: main;
+}
+
+.image{
+    background-color: powderblue;
+    grid-area: image;
+}
+
+.extra{
+    background-color: seagreen;
+    grid-area: extra;
+}
+
+.banner{
+    background-color: yellow;
+    grid-area: banner;
+}
+
+body{
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    height: 600px;
+    grid-template-rows: 1fr 6fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    'header menu menu menu'
+    'hero hero hero hero'
+    'main main . image'
+    'main main . extra'
+    'banner banner banner banner';
+}
+
+@media(max-width: 880px) {
+    body{
+        grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
+        grid-template-areas: 
+        'header header header header'
+        'hero hero hero hero'
+        'menu main main main'
+        'menu banner banner banner'
+        'menu extra extra image';
+    }
+}
+
+@media(max-width: 540px) {
+    body{
+        grid-template-rows: 1fr 1fr 2.5fr 2.5fr 2fr 2fr 2fr;
+        grid-template-areas: 
+        'header'
+        'menu'
+        'hero'
+        'main'
+        'banner'
+        'extra'
+        'image';
+    }
+} */

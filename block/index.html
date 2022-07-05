@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: "Trebuchet MS";
+        }
+        .block{
+            width: 1140px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #214074;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .block-info{
+            display: grid;
+            grid-row-gap: 14px;
+        }
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .item-header{
+            font-size: 18px;
+            color: #214074;
+            font-weight: 700;
+        }
+        .item-year{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .item-btn{
+            background: #edc146;
+            font-size: 12px;
+            padding: 8px 14px;
+            border: none;
+            max-width: 160px;
+            border-radius: 10px;
+            transition: all 0.3s ease 0s;
+        }
+        #modal{
+            top: 0;
+            left: 0;     
+            position: fixed;
+            background: rgba(0, 0, 0, 0.5);
+            min-width: 100%;
+            min-height: 100%;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+        .modal{
+            background-color: #fff;
+            max-height: 50vh;
+            max-width: 600px;
+        }
+        .visible{
+            display: flex !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="block-info">
+            <div class="item">
+                <div class="item-header">
+                    Код направления подготовки
+                </div>
+                <div class="item-text">
+                    38.05.01
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    Направление подготовки
+                </div>
+                <div class="item-text">
+                    Экономическая безопасность
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    Профиль
+                </div>
+                <div class="item-text">
+                    Финансовый учет и контроль в правоохранительных органах
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    Уровень образования
+                </div>
+                <div class="item-text">
+                    Высшее образование - специалитет
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    Срок действия государственной аккредитации
+                </div>
+                <div class="item-text">
+                    23.07.2027
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    Форма обучения
+                </div>
+                <div class="item-text">
+                    Очная
+                </div>
+            </div>
+        </div>
+        <div class="block-info">
+            <div class="item">
+                <div class="item-header">
+                    Язык обучения
+                </div>
+                <div class="item-text">
+                    Русский
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    Срок обучения
+                </div>
+                <div class="item-text">
+                    5 лет
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    Использование электронного обучения и дистанционных методов
+                </div>
+                <div class="item-text">
+                    Не могут использоваться элементы дистанционного обучения
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    Учебные предметы, курсы, дисциплины (модули)
+                </div>
+                <div class="item-year">
+                    <div>
+                        2020 - 
+                    </div>
+                    <button class="item-btn">
+                        Показать
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="item">
+                <div class="item-header">
+                    Практики
+                </div>
+                <div class="item-year">
+                    <div>
+                        2020 - 
+                    </div>
+                    <button class="item-btn" type="button">
+                        Показать
+                    </button>
+                </div>
+            </div> -->
+        </div>
+        <div id="modal">
+            <div class="modal">
+                <div class="modal-header">
+                    Учебные предметы, курсы, дисциплины (модули)
+                </div>
+                <hr>
+                <div class="modal-text">
+    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        let btn = document.querySelector('.item-btn');
+        btn.onclick = function(e){
+            e.preventDefault();
+            document.querySelector('#modal').classList.add('visible');
+        }
+        document.querySelector('#modal').onclick = function(e){
+            e.preventDefault();
+            document.querySelector('#modal').classList.remove('visible');
+        }
+    </script>
+</body>
+</html>

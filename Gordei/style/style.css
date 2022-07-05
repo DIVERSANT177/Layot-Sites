@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header .nav-link{
+    color: black;
+}
+.header .header-left .nav-link{
+    font-weight: 700;
+}
+.main-top-text{
+    font-weight: 700;
+    line-height: 60px;
+}
+.sign-in{
+    line-height: 60px;
+}
+.sign-in a{
+    text-decoration: none;
+    color: black;
+}
+.sale{
+    color: red;
+}
+.main-top-logo{
+    font-size: 40px;
+    font-weight: 300;
+    margin-left: -200px;
+}
+.main-top-center{
+    margin-left: -150px;
+    font-size: 18px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: gray;
+}
+.price{
+    font-weight: 700;
+    font-size: 28px;
+}
+.bonus{
+    color: rgb(184, 172, 71);
+    font-size: 20px;
+}
+.bonus span{
+    font-weight: 700;
+}
+.product-info .btn{
+    padding: 15px 70px;
+    margin-top: 50px;
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.footer-top{
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+.footer-top::after{
+    position: absolute;
+    width: 25px;
+    height: 1px;
+    background-color: #000;
+    left: 0;
+    top: 45px;
+    content: "";
+}
+.footer-text{
+    margin-bottom: 10px;
+}
+.footer .footer-text a{
+    color: gray;
+}
+.product-info a{
+    text-decoration: none;
+    color: black;
+}
+
+.product-info .active{
+    border-bottom: black solid 2px;
+    padding-bottom: 17px;
+    font-weight: 700;
+}
+.block-green{
+    background-color: lightgreen;
+    color: green;
+    padding: 5px;
+}
+
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.rating-mini a {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: black;
+}
+.rating-mini > a:before {
+	content: '★';
+}

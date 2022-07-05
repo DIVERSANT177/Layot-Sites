@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #FFF0DB;
+}
+
+.bg-light-brown{
+    border-radius: 10px;
+    padding: 60px 58px 60px 58px;
+    background: #ffe6c2;
+}
+
+.about .h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: #B6A281;
+    margin-bottom: 40px;
+}
+
+.about-row ~ p, 
+.about-question{
+    font-weight: 500;
+    font-size: 24px;
+    color: #B6A281;
+    font-family: "Geometria",Helvetica,Arial,sans-serif;
+}
+
+
+
+.about-label{
+    font-family: "Lato",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    color: #666666;
+    line-height: 25.2px;
+
+}
+
+.about-img{
+    border-radius: 10px;
+    background-color: #fff;
+    height: 345px;
+    margin-bottom: 20px;
+}
+
+.about-img-back{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.about-image_text{
+    font-size: 18px;
+    color: #fff;
+    font-family: "Geometria",Helvetica,Arial,sans-serif;
+}
+
+.about-img1{
+    height: 145px;
+}
+
+.about-img2{
+    height: 180px;
+}
+
+.about-img3{
+    height: 190px;
+    
+}
+
+.about-img4{
+    height: 135px;
+}
+
+
+.about-row{
+    margin-top: 43px;
+    margin-bottom: 70px;
+}
+
+.about-row-image{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.about-address{
+    font-family: "Roboto" !important;
+}
+.text-bold{
+    font-family: "Geometria",Helvetica,Arial,sans-serif;
+}
+
+.img-about{
+    display: inline !important;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-light-brown{
+        padding: 60px 24px 60px 24px;
+    }
+    .about .h1{
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .about-row ~ p, 
+    .about-question{
+        font-size: 20px;
+    }
+
+    .about-label{
+        font-size: 16px;
+    }
+    .about-row{
+        margin-bottom: 90px;
+    }
+    .about-row-image{
+        margin-bottom: 65px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about .h1{
+        font-size: 22px;
+    }
+
+    .about-row ~ p, 
+    .about-question{
+        font-size: 18px;
+    }
+
+    .about-image_text{
+        font-size: 16px;
+    }
+
+}

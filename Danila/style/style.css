@@ -1,0 +1,126 @@
+header{
+    width: 100%;
+    background: linear-gradient(90deg,#ff8e3a,#ffd130);
+    padding: 20px 0;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: hsl(26, 79%, 85%);
+}
+.special{
+    padding: 5px 15px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.special:hover{
+    color: #ff8e3a;
+    border-color: #ff8e3a;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+}
+.input{
+    border-radius: 50px;
+}
+.logo{
+    margin-right: 100px;
+}
+.header-middle a{
+    color: white;
+    text-decoration: none;
+}
+.header-bottom{
+    margin-left: 250px;
+}
+.separator{
+    width: 1px;
+    background: #e0e0e0;
+    height: 35px;
+}
+.line-top li{
+    font-size: 25px;
+}
+.line-top li a{
+    color: black;
+    text-decoration: none;
+}
+.line-top li a:hover{
+    color: rgb(0, 167, 56);
+}
+.back{
+    padding: 5px 15px;
+    border: 2px solid #55ad4d;
+    border-radius: 50px;
+    color: #55ad4d;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.back:hover{
+    color: #55ad4d;
+}
+.breadcrumb{
+    margin-left: 20px;
+}
+.breadcrumb li a{
+    text-decoration: none;
+    color: black;
+}
+.breadcrumb li a:hover{
+    color: #55ad4d;
+}   
+.main-right{
+    padding-left: 50px;
+}
+.main-right .text-decoration-line-through{
+    margin-left: 15px;
+}
+
+.main-right .text-success{
+    font-size: 18px;
+    margin-top: 40px;
+}
+.btn-warning{
+    border-radius: 50px;
+    padding: 10px 15px;
+    min-width: 167px;
+    margin-top: 40px;
+}
+footer{
+    background: linear-gradient(90deg,#ff8e3a,#ffd130); 
+    color:white;
+    padding: 20px 0;
+}
+footer ul li{
+    list-style: none;
+}
+.tel a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.text-footer{
+    color: gray;
+}
+.facebook{
+    background-color: white;
+    border-radius: 50px;
+    
+}
+.facebook a{
+    text-decoration: none;
+    color: #ffd130;
+    display: block;
+    font-size: 30px;
+    padding: 5px 20px;
+}
+main{
+    padding:0 0 30px 0;
+}

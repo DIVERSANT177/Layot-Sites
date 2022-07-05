@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    min-height: 100%;
+    position: relative;
+}
+
+.header__phone{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.header__phone:before{
+    content: "\f095";
+    font-family: 'icomoon';
+    position: absolute;
+    color: black;
+    left: -20px;
+}
+
+
+.nav__list li{
+    margin-top: 14px;
+} 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: gray;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+    background-color: black;
+    transition: 0.5s all;
+}
+
+.d-flex .item{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.content{
+    border: black solid 1px;
+    height: 150px;
+    background-color: gray;
+}
+
+.demo-wrapper {
+    width: 300px;
+    margin: 30px auto 0;
+}
+.html5-progress-bar {
+    padding: 15px 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, .2);
+}
+ 
+.html5-progress-bar progress {
+    background-color: #f3f3f3;
+    border: 0;
+    width: 80%;
+    height: 18px;
+}
+
+.html5-progress-bar .progress-value {
+    padding: 0px 5px;
+    line-height: 20px;
+    margin-left: 5px;
+    font-size: .8em;
+    color: #555;
+    height: 18px;
+    float: right;
+}
+
+footer{
+    height: 50px;
+}
+
+footer .d-flex{
+    line-height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar .container-fluid{
+        flex-direction: column;
+    }
+}
